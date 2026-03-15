@@ -73,7 +73,7 @@ function ComponentesPage() {
         <p className="font-ui text-sm text-foreground-muted">
           Card de estatística com label (uppercase) e valor grande.
         </p>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <StatCard label="Total Clientes" value="48" />
           <StatCard label="Orçamentos" value="124" />
           <StatCard label="Valor Total" value="R$ 87.500" />

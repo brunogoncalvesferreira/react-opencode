@@ -17,7 +17,9 @@ export function Sidebar({ items, className }: SidebarProps) {
   return (
     <aside
       className={twMerge(
-        'flex flex-col gap-6 bg-surface p-5 w-55 min-h-screen',
+        'flex bg-surface',
+        'flex-row items-center gap-4 px-4 py-3 w-full',
+        'md:flex-col md:items-start md:gap-6 md:p-5 md:w-55 md:min-h-screen',
         className,
       )}
     >
@@ -28,7 +30,7 @@ export function Sidebar({ items, className }: SidebarProps) {
         ORÇA PRO
       </Link>
 
-      <nav className="flex flex-col gap-3 w-full">
+      <nav className="flex gap-3 w-full md:flex-col">
         {items.map((item) => {
           const isActive = !!matchRoute({ to: item.to, fuzzy: true })
           return (

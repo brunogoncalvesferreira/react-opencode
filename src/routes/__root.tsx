@@ -14,10 +14,10 @@ export const Route = createRootRoute({
 
 function RootLayout() {
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="flex flex-col md:flex-row min-h-screen bg-background">
       <Sidebar items={navItems} />
 
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 md:p-10">
         <Outlet />
       </main>
 

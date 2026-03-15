@@ -16,7 +16,8 @@ export function ListRow({ left, right, onClick, className }: ListRowProps) {
       type={onClick ? 'button' : undefined}
       onClick={onClick}
       className={twMerge(
-        'flex items-center justify-between bg-surface p-4 w-full shadow-sm',
+        'flex flex-col gap-2 bg-surface p-4 w-full shadow-sm',
+        'sm:flex-row sm:items-center sm:justify-between sm:gap-0',
         onClick && 'cursor-pointer',
         className,
       )}

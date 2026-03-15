@@ -19,7 +19,7 @@ function DashboardPage() {
         actions={<Button>Novo Orçamento</Button>}
       />
 
-      <div className="flex gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <StatCard label="Orçamentos este mês" value="18" />
         <StatCard label="Taxa de aprovação" value="62%" />
         <StatCard label="Receita prevista" value="R$ 48.200" />
